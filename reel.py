@@ -11,7 +11,7 @@ BUCKET = "QR"
 
 st.set_page_config(page_title=TITLE,page_icon="🎬")
 
-st.title("CodeWar")
+st.title(TITLE)
 
 supabase = create_client(st.secrets["supabase_url"], st.secrets["supabase_key"])
 
@@ -72,3 +72,4 @@ with st.expander("User Data",expanded=True):
                 
         else:
             st.error("Fill all Fileds")
+
